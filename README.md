@@ -50,3 +50,7 @@ You can configure the following settings in `main.py` ...
 - `INPUT_PATH`: Path to the input image file.
 - `OUTPUT_PATH`: Path to save the generated cross stitch pattern.
 - `N_COLORS`: Number of colors to use in the pattern. The more colours, the more detailed the pattern will be, but it will require a greater selection of threads.
+
+## Example Image
+
+![Example Image](README-EXAMPLE.png)
