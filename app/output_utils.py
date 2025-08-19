@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-SYMBOLS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*")  # extend as needed
+SYMBOLS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*")
 
 
 def assign_symbols(palette):
@@ -81,3 +81,4 @@ def save_bitmap(pixels: np.ndarray, output_path: str, dmc_df, pixel_size: int = 
         draw.text((pixel_size*4, y_pos + (pixel_size - h_floss)/2), str(floss_num), fill=(0,0,0), font=font)
 
     img.save(output_path)
+    print(f"Bitmap saved to {output_path}")

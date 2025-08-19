@@ -31,10 +31,14 @@ def cross_stitch_svg(input_path: str, output_path: str, n_colors: int = 5,
 
 
 if __name__ == "__main__":
+
+    INPUT_PATH = "app/inputs/input.png"
+    OUTPUT_PATH = "app/outputs/output.png"
+    N_COLOURS = 5
     cross_stitch_svg(
-        "app/inputs/jiggly.jpg",
-        "app/outputs/cross_stitch4.png",
-        n_colors=10,
+        INPUT_PATH,
+        OUTPUT_PATH,
+        n_colors=N_COLOURS,
         max_dim=90,
         pixel_size=20
     )
